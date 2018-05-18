@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+
+	<meta charset="utf-8">
+
+	<title>registro</title>
+    
+    <!-- Main Style -->
+  
+    <link rel="stylesheet"  media="screen" href="assets/css/estiloinicio1.css">
+     
+    <!-- Extras -->
+    <!-- -->
+   
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <script type="text/javascript">
+    //EVENTOS EN javascript
+
+    function hacer_click()
+    {
+        alert("se ha enviado una clave provisional a su correo");
+       // history.back();
+        window.location.href='inicio1.html';
+    }
+
+    
+    </script>
+
+</head>
+
+<body>
+
+    <div id="login-form">
+
+        <h1>RECUPERAR CONTRASEÑA</h1>
+
+        <fieldset>
+
+            <form action="javascript:void(0);" method="get">
+
+               <input type="text" onkeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false" placeholder="ingrese su cedula">
+
+               
+
+                <input type="submit" value="Enviar" onclick="hacer_click()">
+
+
+                <footer class="clearfix">
+                    
+                    <button type="button" class="btn btn-outline btn-default" onclick="history.go(-1); return false;"><span class="glyphicon glyphicon-ban-circle"></span> Volver</button>
+
+
+                 <!--   <p><span class="info">?</span><a href="#">olvido contraseña</a></p>
+                    <p><span class="info">?</span><a href="inicio1.html" class="fancybox fancybox.iframe">JODANSEEEE</a></p> -->
+
+
+                </footer>
+
+            </form>
+
+                    
+
+        </fieldset>
+
+    </div> 
+    
+
+    
+</body>
+</html>

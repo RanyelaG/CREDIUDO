@@ -10,6 +10,8 @@
  *
  */
 
+
+
 (function (window, document, $, undefined) {
 	"use strict";
 
@@ -19,6 +21,8 @@
 		F = $.fancybox = function () {
 			F.open.apply( this, arguments );
 		},
+
+		
 		IE =  navigator.userAgent.match(/msie/i),
 		didUpdate	= null,
 		isTouch		= document.createTouch !== undefined,

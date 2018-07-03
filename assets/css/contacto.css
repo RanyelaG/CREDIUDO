@@ -15,8 +15,9 @@
   padding-top: 60px;
   width: 100%;
   width: 100vw;
-  height: 550px;
-  background: #3a6186; /* fallback for old browsers */
+  height: 700px;
+  background-image: url("../../../assets/img/fina.png");
+  margin-top:1px;/* fallback for old browsers */
  
     color : #fff;    
 }
@@ -38,7 +39,6 @@ label{
   font-size: 1.3em;
   line-height: 1em;
   font-weight: normal;
-  color: #333333ff;
 }
 .form-control{
   font-size: 1.3em;

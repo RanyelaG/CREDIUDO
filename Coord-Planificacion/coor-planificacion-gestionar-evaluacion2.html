@@ -1,0 +1,468 @@
+<!-- DOCTYPE -->
+<!DOCTYPE html>
+<html lang="en">
+
+
+   <head>
+          <meta charset="utf-8">
+       <!-- Viewport Meta Tag -->
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>Gestionar Evaluacion </title>
+       <!-- Bootstrap -->
+          <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+       <!-- Main Style -->
+          <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        <!-- Responsive Style -->
+          <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+        <!--Fonts-->
+          <link rel="stylesheet" media="screen" href="assets/fonts/font-awesome/font-awesome.min.css">
+          <link rel="stylesheet" media="screen" href="assets/fonts/simple-line-icons.css">    
+        <!-- Extras -->
+          <link rel="stylesheet" type="text/css" href="assets/extras/owl/owl.carousel.css">
+          <link rel="stylesheet" type="text/css" href="assets/extras/owl/owl.theme.css">
+          <link rel="stylesheet" type="text/css" href="assets/extras/animate.css">
+          <link rel="stylesheet" type="text/css" href="assets/extras/normalize.css">
+          <link rel="stylesheet" type="text/css" href="assets/extras/settings.css">
+        <!-- Color CSS Styles  -->
+          <link rel="stylesheet" type="text/css" href="assets/css/colors/green.css" media="screen" /> 
+
+          <!-- CALENDARIO  -->
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+           <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+            
+            <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
+            <link rel="stylesheet" href="assets/css/tecnoTiempo.min.css">
+          
+      
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!--<script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
+
+
+
+   </head>
+
+<body style="overflow-x: hidden;">
+  <header id="header-wrap">
+         <!-- Roof area starts --> <!-- Roof area Ends --> <!-- Header area starts -->
+           <section id="header">
+            <div class="container">
+              <div class="row">
+             <!-- Navbar Starts -->
+              <div id="free-promo" style="text-align: center; margin-top: 0px;">
+              <div class="row" style="width: 100%">
+              <div class="container">
+                  <center>
+                      <img src="assets/img/testimonial/banner-sistema.jpg" alt="" style="width: 100%;"> 
+                   </center>
+                   <!-- Search Ends -->                  
+                
+              </div> 
+              </div>
+              </div>
+            </div>
+          </div>
+            </section>
+  
+     </header>
+
+</body>
+
+<!-- INTERFAZ---------------------------------------------------------------------------->
+   <body>
+     <!-- Header area wrapper starts -->
+
+  <header id="header-wrap">
+         <!-- Roof area starts --> <!-- Roof area Ends --> <!-- Header area starts -->
+<section id="header">
+             <!-- Navbar Starts -->
+<nav class="navbar navbar-light" data-spy="affix" data-offset-top="50">
+              <div class="container">
+              <button class='navbar-toggler hidden-md-up pull-xs-right' data-target='#main-menu' data-toggle='collapse'   type='button'>
+                  ☰
+              </button>
+                <!-- Brand -->
+                <a class="navbar-brand" href="index.html">
+              <img src="assets/img/crediudo1.png" alt="">
+            </a>
+            <div class="collapse navbar-toggleable-sm pull-xs-left pull-md-center" id="main-menu">
+               <!-- Navbar Starts -->
+               <div class="container">
+                  <center>
+
+                  <ul class="nav nav-inline">
+                     <li class="nav-item dropdown " style="left: 30px;">
+                     <a style="color:black;" class="nav-link active" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                      GESTIONAR NOTICIAS
+                     </a>
+                     </li> 
+
+                     <li class="nav-item dropdown" style="left: 70px;">
+                     <a style="color:black;" class="nav-link active"  role="button" aria-haspopup="true" href="#" aria-expanded="false">
+                       PROGRAMACION DE EVENTOS 
+                     </a>
+                    </li>
+
+                    <li class="nav-item dropdown" style="left: 90px;">
+                    <a style="color:black;" class="nav-link active" href="/evaluacion" role="button" aria-haspopup="true" aria-expanded="false">
+                    GESTIONAR EVALUACIONES
+                    </a> 
+                   </li>
+
+                <li class="nav-item dropdown" style=" right:-100px;">
+                    <a href="#" class="fancybox fancybox.iframe" >
+                    <span  class="fa fa-user" style="color:#2a7fffff;font-size:24px;"></span>&nbsp COOR.PLANIFICACION
+                    </a>
+
+                    <div class="dropdown-menu" style="width: 20%;">                      
+                    <a class="dropdown-item" href="/modificar_datos">Actualizar Datos</a>
+                    <a class="dropdown-item" href="/sesion_crediudo/cerrar">Cerrar Sesion</a>
+                    </div>
+                </li> 
+
+
+                   </ul>
+                </center>
+                   <!-- Search Ends -->                  
+                
+                </div> 
+             </div>
+          </div>
+</nav>
+
+</section>
+</header>
+
+
+
+  <!-----------------------------------CUADRO DE LAS FUNCIONALIDADES DE CREAR, MODIFICAR Y ELIMINAR -->
+
+<section id="team" class="section" style="background-color:#f9f9f9ff; margin-top:0px; position: center;">
+      <!-- Container Starts -->
+  <div class="container">        
+        <!-- Row Starts -->
+        <div class="row">
+
+         <center>        
+          <!-----------------------------------------------------------------------CREAR-- -->          
+          
+          <div class="col-sm-6 col-md-4">
+            <!-- Team Item Starts -->
+          <div class="team-item wow fadeInUpQuick" data-wow-delay="1.4s" >
+              <figure class="team-profile" style="width: 120px; height: 150px;" >
+               <img  style="margin-top: 20px;" src="assets/img/crear-evaluacion.png" class="img-responsive img-rounded" alt="">
+              </figure>
+              <div class="button btn-xs" >
+                <button class="press" style="background:#2a7fffff; border-radius: 2px;" href=" " >
+                   <a   style="color: white;" href="/evaluacion">  Crear  Evaluacion</a>
+                </button>  
+              </div>
+            </div>
+          </div>
+
+          <!-----------------------------------------------------------------------MODIFICAR-- --> 
+          <div class="col-sm-6 col-md-4">
+            <!-- Team Item Starts -->
+          <div class="team-item wow fadeInUpQuick" data-wow-delay="1.1s">
+             <figure class="team-profile" style="width: 120px; height: 150px;">
+                <img style="margin-top: 20px;" src="assets/img/modi-eva.png" class="img-responsive img-rounded" alt=""><br>
+              </figure>
+    
+             
+            <div class="button btn-xs" >
+                <button  class="press"  style="background:#2a7fffff; border-radius: 2px;">
+                  <center><a ID="modificar" href="#" style="color: white;">Modificar Evaluacion</a></center>
+                </button>
+                <div class="modal fade" id="#miventana" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
+              </div>
+           
+            
+          </div><!-- Team Item Starts -->
+          </div>
+
+          <!-----------------------------------------------------------------------ELIMINAR-- -->
+          <div class="col-sm-6 col-md-4">
+            <!-- Team Item Starts -->
+             <div class="team-item wow fadeInUpQuick" data-wow-delay="1.1s">
+              <figure class="team-profile" style="width: 120px; height: 150px; ">
+                  <img  style="margin-top: 20px;" src="assets/img/visu.png" class="img-responsive img-rounded" alt=""></a>
+              </figure>
+             <div class="button btn-xs" >
+                <button class="press" style="background:#2a7fffff; border-radius: 2px;">
+                  <center><a href="#" style="color: white;"> Visualizar Evaluaciones</a></center>
+                </button>
+              </div>
+            </div>
+          </div>
+
+            <!-- Team Item Ends -->
+          
+          </center>          
+        </div><!-- Row Ends -->
+  </div> 
+</section>
+
+<center>
+
+  <section >
+
+
+
+
+
+
+
+ <div id="free-promo" style="text-align: center; ">
+    <section class="split section " >
+
+      <nav class=" " data-spy="affix" >
+      <div class="container">
+      <div class="row">
+      <center>
+        
+
+      <div class="container" style="text-align:center;">
+        <h2><a rel=" " style="color:#374845ff; " >Crear Evaluacion</a></h2><br>
+      </div>
+            
+                  
+           <!-- seccion del formulario -->    
+<form action="/evaluacion/crear" method="post">      
+      <div class="col-sm-6 col-md-10 col-md-offset-1" style="margin-top: 10px;">
+
+           <div class="form-group" style="width: 50%;">
+                  <p for="tipo_eval"><b>Tipo de Evaluación:</b></p>
+                <select name="tipo_eval" class="form-control">
+                  <option value="administrativos">Personal Administrativo</option>
+                  <option value="centros">Centro de Investigación</option>
+                </select>             
+                </div>
+
+                  <div class="form-group" style="width: 50%;">
+                  <p for="name"><b>Nombre:</b></p>
+                <input type="text" name="nombre" placeholder="Nombre de la Evaluación" class="form-control">              
+                </div>
+
+
+                 <div class="form-group" style="width: 50%;">
+                  <p for="nucleo"><b>Especifique la Unidad a Aplicar la Evaluacion:</b></p>
+                 
+                 <select name="unidad" class="form-control">
+                  <%dataUnidad.forEach((dataUnidad)=>{ %>
+                  <option value=<%=dataUnidad.codigo%>><%=dataUnidad.nombre%></option>
+                  <%})%>
+                </select>             
+                </div>
+
+
+                   <div class="form-inline" >
+                        <div  class="form-group" >
+                        <p ><b>Fecha de Inicio:</b></p>
+   
+                       <input type="text" name="fechai" class="form-control" id='datetimepicker1'>
+  
+                     </div>
+                        <div class="form-group">
+                         <p ><b>Fecha de Fin:</b></p>
+  
+                       <input type="text" name="fechaf" class="form-control" id='datetimepicker2'>
+  
+                     </div>
+
+                     </div>
+
+
+                <div class="form-group" style="margin-top: 30px;">
+                  
+                  <div class="col-md-3 col-md-offset-3">
+                       <div class="form-check" style="margin-top: -10px;">
+                        <input class="form-check-input" type="radio" name="enfoque" id="exampleRadios1" value="Auto-Jefe" checked>
+                           <label class="form-check-label" for="defaultCheck1">
+                            Auto-Evaluacion-Jefe
+                          </label>
+                        </div>
+                       
+
+                        <div class="form-check" style="margin-top: 10px;">
+                            <input class="form-check-input" type="radio" name="enfoque" id="exampleRadios1" value="Jefe-Subordinado" checked>
+                          <label class="form-check-label" for="defaultCheck1">
+                            Evaluacion-Jefe-Subordinado
+                          </label>
+                        </div>
+                  </div>
+
+                  <div class="col-md-3">
+
+                     <div class="form-check" style="margin-top: -10px;">
+                        <input class="form-check-input" type="radio" name="enfoque" id="exampleRadios1" value="Auto-Subordinado" checked>
+                           <label class="form-check-label" for="defaultCheck1">
+                            Auto-Evaluacion-Subordinado
+                          </label>
+                        </div>
+
+                        <div class="form-check" style="margin-top: -9px;">
+                           <input class="form-check-input" type="radio" name="enfoque" id="exampleRadios1" value="Subordinado-Jefe" checked>
+                           <label class="form-check-label" for="defaultCheck1">
+                            Evaluacion-Subordinado-Jefe
+                           </label>
+                        </div>
+
+                        
+                        <!--<div class="form-check">
+                            <input class="form-check-input" type="radio" name="enfoque" id="exampleRadios1" value="Co-Evaluación" checked>
+                          <label class="form-check-label" for="defaultCheck1">
+                            Co-Evaluación
+                          </label>
+                        </div>--Z
+                  </div>
+                 <br>
+              </div>
+               <div class="col md-4"> 
+                      <br><p ><b></b></p>
+                       <!-- <input type='text' class="form-control" style="width: 50%;" id='datetimepicker1'>-->
+
+                        <fieldset> 
+                        <br><p ><b></b></p>
+                          
+                  </fieldset> 
+                  </div>
+            
+               
+
+                 
+            <!-- Team Item Starts -->
+     </div>
+         
+          
+
+
+          </div>
+        </center>      
+        </div>
+      </div>
+        </nav>
+    </section>
+
+    <center>
+
+      <button type="submit" action="/evaluacion" method="post" style="background:#00aad4ff; border-radius: 2px; margin-top: -20px;" class="btn btn-default">
+          <center><a  style="color: white;">Crear</a></center>
+
+    </button>
+
+    </center>
+
+</form>  
+    </div>
+
+ 
+
+         <footer>
+
+      <div class="footer wow fadeIn">
+            <div id="free-promo" style="text-align: center; margin-top: 30px;">
+            <br>
+            <p>Av Gran Mariscal-Edificio Rectorado 
+            <br>Cumaná-Venezuela.
+            <br>Telefono. +58(0293) 400 01 01</p>
+            <div class="social-footer" style="margin-top: -10px;">
+                   <a href="#"><i style=" background:#2a7fffff;" class="fa fa-facebook icon-round" ></i></a>
+                   <a href="#"><i style=" background:#2a7fffff;" class="fa fa-twitter icon-round"></i></a>
+                   <a href="#"><i style=" background:#2a7fffff;" class="fa fa-google-plus icon-round"></i></a>
+                </div>
+                <br>           
+            </div>
+
+
+      </div>
+      
+    </footer>
+
+
+    <!-- Footer Section End-->
+
+                         
+
+
+    <div class="bottom"> <a href="#" class="settings"></a> </div>
+
+    <!-- -----------------------------------JavaScript & jQuery Plugins --------------------------------------------->
+    <!-- jQuery Load -->
+    <script src="assets/js/jquery-min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--Text Rotator-->
+    <script src="assets/js/jquery.mixitup.js"></script>
+    <!--WOW Scroll Spy-->
+    <script src="assets/js/wow.js"></script>
+    <!-- OWL Carousel -->
+    <script src="assets/js/owl.carousel.js"></script>
+ 
+    <!-- WayPoint -->
+    <script src="assets/js/waypoints.min.js"></script>
+    <!-- CounterUp -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- ScrollTop -->
+    <script src="assets/js/scroll-top.js"></script>
+    <!-- Appear -->
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.vide.js"></script>
+     <!-- All JS plugin Triggers -->
+    <script src="assets/js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js" type="text/javascript"></script>
+  <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+       
+
+
+
+
+        <script type="text/javascript">
+            $(function () { $('#datetimepicker1').datetimepicker(); });
+        </script>
+
+        <script type="text/javascript">
+         var _gaq = _gaq || [];
+         _gaq.push(['_setAccount', 'UA-36251023-1']);
+         _gaq.push(['_setDomainName', 'jqueryscript.net']);
+         _gaq.push(['_trackPageview']);
+
+       (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
+
+         </script>
+
+
+
+          <script type="text/javascript">
+            $(function () { $('#datetimepicker2').datetimepicker(); });
+        </script>
+
+        <script type="text/javascript">
+         var _gaq = _gaq || [];
+         _gaq.push(['_setAccount', 'UA-36251023-1']);
+         _gaq.push(['_setDomainName', 'jqueryscript.net']);
+         _gaq.push(['_trackPageview']);
+
+       (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
+
+         </script>
+
+
+    
+  </body>
+
+</html>

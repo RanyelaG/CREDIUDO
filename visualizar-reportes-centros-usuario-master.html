@@ -254,7 +254,7 @@
   </div>
 </div>
 <div class="alinearcent">
-    <button type="submit" class="btn btn-default botones paddindaniela" style="background: #71c837ff; margin-top: -20px; margin-right: 20px;">Visualizar grafica</button>
+    <!--<button type="submit" class="btn btn-default botones paddindaniela" >Visualizar grafica</button>--><a type="button" class="btn btn-default botones paddindaniela" data-toggle="modal" data-target="#myModal" style="background: #71c837ff; margin-top: -20px; margin-right: 20px;">Visualizar grafica</a>
   </div>
     </div>
 
@@ -266,7 +266,6 @@
          </span>
             <i  style="color:white;" class="fa fa-file-pdf-o fa-1x margenbotones"></i>           
             <i  style="color:white;" class="fa fa-print fa-1x margenbotones"></i>
-            <i  style="color:white;" class="fa fa-share-alt fa-1x margenbotones"></i>
          </div>
       </div>
             <div id="encabezado" style=" border-radius: 2px;">
@@ -274,14 +273,13 @@
               <p class="encabezado propitext">Promedio</p>
             </div>
                 
-                
-            <div class="accordion" id="accordion" style=" border-radius: 2px;">
+<div class="accordion" id="accordion" style=" border-radius: 2px;">
   <div class="card">
     <div class="card-header" id="headingOne">
         <h6 class="text-center marginauto">Responsabilidad</h6>
         <button onclick="show('id1')" class="btn btn-link" id="btnplus" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
         <i class="fa fa-plus-circle fa-1x plusboton" id="plusboton1id1"></i>
-        <i  class="fa fa-minus-circle fa-1x plusboton" id="plusboton2id1" style="display: none;"></i>
+        <i  class="fa fa-minus-circle fa-1x plusboton" id="plusboton2id1" style="display: none"></i>
         </button>
     </div>
 
@@ -309,16 +307,54 @@
     </div>
 
 
-    <div >
+    <div>
       <span class="pie propitext" style=" border-radius: 2px;">Promedio del factor: </span>
     </div>
   </div>
   </div>
+<div class="accordion" id="accordion" style=" border-radius: 2px;">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+        <h6 class="text-center marginauto">Responsabilidad</h6>
+        <button onclick="show('id2')" class="btn btn-link" id="btnplus" type="button" data-toggle="collapse" data-target="#collapseOne22" aria-expanded="true" aria-controls="collapseOne22">
+        <i class="fa fa-plus-circle fa-1x plusboton" id="plusboton1id2"></i>
+        <i class="fa fa-minus-circle fa-1x plusboton" id="plusboton2id2" style="display: none"></i>
+        </button>
+    </div>
+
+    <div id="collapseOne22" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-hover table-striped">
+            <tbody>
+              <tr>
+                <td width="70%">Marksgertr rtertrtry</td>
+                <td width="30%">Otto</td>
+              </tr>
+              <tr>
+                <td>Jacob</td>
+                <td>Thornton</td>
+              </tr>
+              <tr>
+                <td>Larry the Bird</td>
+                <td>Thornton</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+    <div>
+      <span class="pie propitext" style=" border-radius: 2px;">Promedio del factor: </span>
+    </div>
+  </div>
    <div class="form-group" id="mararrb">
           <label class="propitext" for="exampleFormControlTextarea1">Recomendaciones</label>
           <div class="botoncitos enlinea" >
-            <i  class="fa fa-edit fa-1x"></i>
-            <i  class="fa fa-trash fa-1x"></i>
+            <i  class="fa fa-edit fa-2x"></i>
+            <i  class="fa fa-trash fa-2x"></i>
           </div>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
@@ -336,6 +372,39 @@
   </div>
 </div>
 
+<div class="modal fade bd-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h5 class="modal-title grafico" id="exampleModalLabel">Gráficos</h5>
+            </div>
+            <div class="modal-body">
+              <div class="tituloselect">
+                
+  <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Gráfico Circular</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Gráfico de columnas</a>
+  </li>
+</ul>
+              </div>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"> <div id="canvas-container" style="width:100%;">
+            <canvas id="chart1" width="420" height="220"></canvas>
+          </div> </div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"> <div id="canvas-container" style="width:100%;">
+            <canvas id="chart" width="420" height="220"></canvas>
+          </div> </div>
+</div>
+      </div>
+    </div>
+  </div>
+  </div>
 
      <!-- Footer Section -->
  <footer>
@@ -385,15 +454,15 @@
     <!-- Appear -->
     <script src="assets/js/jquery.appear.js"></script>
     <script src="assets/js/jquery.vide.js"></script>
-     <!-- All JS plugin Triggers -->
-    <script src="assets/js/main.js"></script>
-<script type="text/javascript">
-  function show(id) {
-   obj = document.getElementById('plusboton1'+id);
-   obj.style.display = (obj.style.display=='none') ? 'block' : 'none';
-   obj2 = document.getElementById('plusboton2'+id);
-   obj2.style.display = (obj.style.display=='none') ? 'block' : 'none';
-}
+     <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/jspdf.min.js"></script>
+    <script src="assets/js/jspdf.js"></script>
+    <script src="assets/js/jquery-2.1.3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="assets/js/personal.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/jsapi.js"></script>
 
 </script>
 

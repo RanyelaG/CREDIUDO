@@ -7,7 +7,7 @@
           <meta charset="utf-8">
        <!-- Viewport Meta Tag -->
           <meta name="viewport" content="width=device-width, initial-scale=1">
-          <title>Modificar Evaluacion</title>
+          <title>Modificar Noticias</title>
        <!-- Bootstrap -->
           <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
        <!-- Main Style -->
@@ -133,12 +133,14 @@
              </div>
           </div>
 </nav>
+
 </section>
 </header>
 
 
 
   <!-----------------------------------CUADRO DE LAS FUNCIONALIDADES DE CREAR, MODIFICAR Y ELIMINAR -->
+
 <section id="team" class="section" style="background-color:#f9f9f9ff; margin-top:0px; position: center;">
       <!-- Container Starts -->
   <div class="container">        
@@ -152,11 +154,11 @@
             <!-- Team Item Starts -->
           <div class="team-item wow fadeInUpQuick" data-wow-delay="1.4s" >
               <figure class="team-profile" style="width: 120px; height: 150px;" >
-               <img  style="margin-top: 20px;" src="../assets/img/crear-evaluacion.png" class="img-responsive img-rounded" alt="">
+               <img  style="margin-top: 20px;" src="../assets/img/noticiascrear.png" class="img-responsive img-rounded" alt="">
               </figure>
               <div class="button btn-xs" >
                 <button class="press" style="background:#2a7fffff; border-radius: 2px;" href=" " >
-                   <a   style="color: white;" href="/evaluacion">  Crear  Evaluacion</a>
+                   <a   style="color: white;" href="/evaluacion">  Crear  Noticia</a>
                 </button>  
               </div>
             </div>
@@ -173,7 +175,7 @@
              
             <div class="button btn-xs" >
                 <button  class="press"  style="background:#2a7fffff; border-radius: 2px;">
-                  <center><a ID="modificar" href="#" style="color: white;">Modificar Evaluacion</a></center>
+                  <center><a ID="modificar" href="#" style="color: white;">Modificar Noticias</a></center>
                 </button>
                 <div class="modal fade" id="#miventana" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
               </div>
@@ -191,7 +193,7 @@
               </figure>
              <div class="button btn-xs" >
                 <button class="press" style="background:#2a7fffff; border-radius: 2px;">
-                  <center><a href="#" style="color: white;"> Visualizar Evaluaciones</a></center>
+                  <center><a href="#" style="color: white;"> Visualizar Noticias</a></center>
                 </button>
               </div>
             </div>
@@ -211,6 +213,9 @@
 
 
 
+
+
+
  <div id="free-promo" style="text-align: center; ">
     <section class="split section " >
 
@@ -220,22 +225,20 @@
       <center>
         
 
-      <div class="container" style="text-align:center;margin-top: 10px;">
-        <h2><a rel=" " style="color:#374845ff; " >Modificar Evaluaciones</a></h2>
-      
+      <div class="container" style="text-align:center;">
+        <h2><a rel=" " style="color:#374845ff; " >Modificar Noticias: Web Principal CREDIUDO</a></h2><br>
       </div>
 
-<br>
+
+      <br>
 <div class="table-responsive">
             <table class="table" style="margin-top: 10px;">
               <thead>
                 <tr>
-                  <th style="width: 30%"><center>Nombre</center></th>
-                  <th scope="col"><center>Tipo de Evaluacion</center></th>
-                  <th scope="col"><center>Nucleo</center></th>
-                  <th scope="col"><center>Enfoque</center></th>
-                  <th scope="col"><center>Inicio</center></th>
-                  <th scope="col"><center>Fin</center></th>
+                  <th style="width: 30%"><center>Titulo</center></th>
+                  <th style="width: 30%"><center>Resumen</center></th>
+                  <th scope="col"><center>Fecha</center></th>
+                  <th scope="col"><center>Accion</center></th>
                   <th scope="col"><center>Accion</center></th>
                 </tr>
               </thead>
@@ -243,22 +246,21 @@
               <tbody>
                 
                   <tr>
-                  
-                    <td><center>Evaluacion Jefe de departamento de la escuela de ciencias sociales</center></td>
-                    <td><center>Personal Administrativo</center></td>
-                    <td><center>Rectorado</center></td>
-                    <td><center>Auto-Evaluacion</center></td>
+                   
+                    <td><center>Junta Anual de CREDIUDO</center></td>
+                    <td><center>Reunion que se llevo a cabo el pasado mes de marzo.</center></td>
+                    <td><center>14/05/2018</center></td>
+                   
                     <td>
-                      <center>14/05/2018</center>
+                      <center><a href="detalle-instrumento.html" data-toggle="modal" data-target="#modievent" class="fa fa-pencil edit-evento" style="color:black;font-size:24px;"></a></center>
                     </td>
                     <td>
-                      <center>14/05/2018</center>
-                    </td>
-                     <td>
-                      <center><a href="detalle-instrumento.html" data-toggle="modal" data-target="#modievent" class="fa fa-pencil edit-evento" style="color:#2a7fffff;font-size:24px;"></a></center>
-                    </td>   
+                      <center>
+                        <a href="/coord_eval/eventos/delete/<%=Eventos[i].id%>" class="fa fa-trash-o"" style="color:#00aad4ff;font-size:24px;"></a>
+                      </center>  
+                    </td>    
                   </tr>
-             
+               
               </tbody>
             </table>
 
@@ -268,7 +270,7 @@
 
           <div class="modal-header">
                         
-            <h3 class="modal-title" id="lineModalLabel" style="margin-left: 125px;">Modificar Evento</h3>
+            <h3 class="modal-title" id="lineModalLabel" style="margin-left: 125px;">Modificar Noticia</h3>
             <button type="button" class="close" data-dismiss="modal">&times;</button>
               </div>
 
@@ -277,125 +279,55 @@
                             <form method="POST" action="/coord_eval/eventos/update" enctype="multipart/form-data">
                               <input type="hidden" name="id" id="evento-id">
 
-
-                              <fieldset> 
-                                 <div class="form-group" style="width: 90%;">
-                                 <p for="tipo_eval"><b>Tipo de Evaluación:</b></p>
-                                  <select  name="tipo_eval" class="form-control">
-                                  <option value="administrativos">Personal Administrativo</option>
-                                  <option value="centros">Centro de Investigación</option>
-                                 </select>             
-                                 </div>
-                              </fieldset>
-
-                              <fieldset> 
-                                <br>
-                                <div class="form-group" style="width: 90%;">
-                                <p for="name"><b>Nombre:</b></p>
-                                <input type="text" name="nombre" placeholder="Nombre de la Evaluación" class="form-control">              
-                                </div>
-                              </fieldset>
-
-                              <fieldset> 
-                                <br>
-                                
-                              <div class="form-group" style="width: 90%;">
-                            <p for="nucleo"><b>Especifique el Nucleo a Aplicar la Evaluacion:</b></p>
-                 
-                            <select name="unidad" class="form-control">
-                             <%dataUnidad.forEach((dataUnidad)=>{ %>
-                            <option value=<%=dataUnidad.codigo%>><%=dataUnidad.nombre%></option>
-                              <%})%>
-                              </select>             
-                              </div>
-                              </fieldset>
-
                                <fieldset> 
-                                <br>
-                                
-                              <div class="form-group" style="width: 90%;">
-                            <p for="nucleo"><b>Especifique la Unidad a Aplicar la Evaluacion:</b></p>
-                 
-                            <select name="unidad" class="form-control">
-                             <%dataUnidad.forEach((dataUnidad)=>{ %>
-                            <option value=<%=dataUnidad.codigo%>><%=dataUnidad.nombre%></option>
-                              <%})%>
-                              </select>             
-                              </div>
-                              </fieldset>
+                      <p ><b>Titulo:</b></p>
+                      <input type="text" class="form-control" style="width: 80%;" placeholder="nombre del evento" name="nombre">
+                    </fieldset>
+
+                    <fieldset> 
+                      <br><p ><b>Fecha de Produccion:</b></p>
+                      <input type='text' class="form-control" style="width: 80%;" name="fecha" id='datetimepicker1'>
+                    </fieldset>
 
 
+                    
+                    <br>
+
+                    
+                    <div class="form-group"><p ><b>Contenido(Maximo de 5000 caracteres):</b></p>
+                      <textarea rows="4" class="form-control" style="width: 80%; border-radius: 2px" name="descripcion"></textarea>
+                    </div>
+
+                      <div class="form-group"><p ><b>Resumen(Maximo 80 caracteres):</b></p>
+                      <textarea rows="4" class="form-control" style="width: 80%; border-radius: 2px" name="descripcion"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                      <label for="urlImg">Afiche Formato PNG,JPG 390x218 </label><br>
+                      <input type="file" name="urlImg">        
+                    </div>
 
 
-                              <fieldset> 
-                                <br>
-                                <p><b>Inicio de la Evaluacion:</b></p>
-                                <input style="width: 90%;" type='text' class="form-control" name="fecha" id="datetimepicker1">
-                              </fieldset>
-
-                                <fieldset> 
-                                <br>
-                                <p><b>Fin de la Evaluacion:</b></p>
-                                <input style="width: 90%;" type='text' class="form-control" name="fecha" id="datetimepicker2">
-                              </fieldset>
-
-
-                       <div class="form-group" style="margin-top: 40px;">
-                  
-                  <div class="col-md-4 col-md-offset-2">
-                       <div class="form-check" style="margin-top: -10px;">
-                        <input class="form-check-input" type="radio" name="enfoque" id="exampleRadios1" value="Auto-Jefe" checked>
-                           <label class="form-check-label" for="defaultCheck1">
-                            Auto-Evaluacion-Jefe
-                          </label>
-                        </div>
-                       
-
-                        <div class="form-check" style="margin-top: 10px;">
-                            <input class="form-check-input" type="radio" name="enfoque" id="exampleRadios1" value="Jefe-Subordinado" checked>
-                          <label class="form-check-label" for="defaultCheck1">
-                            Evaluacion-Jefe-Subordinado
-                          </label>
-                        </div>
-                  </div>
-
-                  <div class="col-md-4">
-
-                     <div class="form-check" style="margin-top: -10px;">
-                        <input class="form-check-input" type="radio" name="enfoque" id="exampleRadios1" value="Auto-Subordinado" checked>
-                           <label class="form-check-label" for="defaultCheck1">
-                            Auto-Evaluacion-Subordinado
-                          </label>
-                        </div>
-
-                        <div class="form-check" style="margin-top: 10px;">
-                           <input class="form-check-input" type="radio" name="enfoque" id="exampleRadios1" value="Subordinado-Jefe" checked>
-                           <label class="form-check-label" for="defaultCheck1">
-                            Evaluacion-Subordinado-Jefe
-                           </label>
-                        </div>
-                              
-
-                             <button type="submit" class="btn btn-default" style="margin-left:-140px;margin-top:20px;background:#00aad4ff; border-radius: 2px;">Guardar</button>
-
-                              
+                           
+                              <button type="submit" class="btn btn-default" style="margin-top:20px;background:#00aad4ff; border-radius: 2px;">Guardar</button>
                             </form>
-
                           </div>
                         </div>
                       </div>
                   </div>
                 </div>
-              </center>
-            </div>
-          </div>
-        </nav>
-      </section>
-    </div>
+            
+                </center>
+                </div>
+                </div>
+                </nav>
+                </section>  
+       
+ 
 
          <footer style="margin-top: 150px;">
 
-      <div class="footer wow fadeIn">
+      <div class="footer wow fadeIn" >
             <div id="free-promo" style="text-align: center; margin-top: 30px;">
             <br>
             <p>Av Gran Mariscal-Edificio Rectorado 
@@ -498,4 +430,3 @@
   </body>
 
 </html>
-
